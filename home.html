@@ -6,10 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .icl-Ratings-starsWrapper {
+            -webkit-font-smoothing: antialiased;
+            -webkit-box-direction: normal;
+            font-size: 11pt;
+            line-height: 20px;
+            font-weight: 400;
+            cursor: pointer;
+            color: #2557a7;
+            box-sizing: border-box;
+            position: relative;
+            display: inline-block;
+            font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+            vertical-align: -1px;
+            filter: grayscale(1) brightness(0.59);
+            margin-right: .25rem;
+        }
+        
+        .icl-Ratings-starsUnfilled {
+            -webkit-font-smoothing: antialiased;
+            -webkit-box-direction: normal;
+            font-size: 11pt;
+            line-height: 20px;
+            font-weight: 400;
+            cursor: pointer;
+            color: #2557a7;
+            box-sizing: border-box;
+            font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 94 19' xmlns='http://www.w3.org/2000/svg' focusable='false'%3E%3Cpath d='M89.427 16.444l-1.175-5.005 3.905-3.364-5.14-.433L85 2.912l-2.016 4.73-5.141.433 3.905 3.364-1.175 5.005L85 13.788l4.427 2.656zm-19 0l-1.175-5.005 3.905-3.364-5.14-.433L66 2.912l-2.016 4.73-5.141.433 3.905 3.364-1.175 5.005L66 13.788l4.427 2.656zm-19 0l-1.175-5.005 3.905-3.364-5.14-.433L47 2.912l-2.016 4.73-5.141.433 3.905 3.364-1.175 5.005L47 13.788l4.427 2.656zm-19 0l-1.175-5.005 3.905-3.364-5.14-.433L28 2.912l-2.016 4.73-5.141.433 3.905 3.364-1.175 5.005L28 13.788l4.427 2.656zm-19 0l-1.175-5.005 3.905-3.364-5.14-.433L9 2.912l-2.016 4.73-5.141.433 3.905 3.364-1.175 5.005L9 13.788l4.427 2.656z' stroke='%23ffca4f' stroke-width='1.5' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            width: 60px;
+            height: 12px;
+            background-size: 60px 12px;
+        }
+        
+        .icl-Ratings-starsFilled {
+            -webkit-font-smoothing: antialiased;
+            -webkit-box-direction: normal;
+            font-size: 11pt;
+            line-height: 20px;
+            font-weight: 400;
+            cursor: pointer;
+            color: #2557a7;
+            box-sizing: border-box;
+            font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 94 19' xmlns='http://www.w3.org/2000/svg' focusable='false'%3E%3Cpath d='M85 14.663L90.562 18l-1.476-6.29L94 7.478l-6.471-.546L85 1l-2.529 5.932L76 7.478l4.914 4.232L79.438 18zm-19 0L71.562 18l-1.476-6.29L75 7.478l-6.471-.546L66 1l-2.529 5.932L57 7.478l4.914 4.232L60.438 18zm-19 0L52.562 18l-1.476-6.29L56 7.478l-6.471-.546L47 1l-2.529 5.932L38 7.478l4.914 4.232L41.438 18zm-19 0L33.562 18l-1.476-6.29L37 7.478l-6.471-.546L28 1l-2.529 5.932L19 7.478l4.914 4.232L22.438 18zm-19 0L14.562 18l-1.476-6.29L18 7.478l-6.471-.546L9 1 6.471 6.932 0 7.478l4.914 4.232L3.438 18z' fill='%23ffca4f' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position-x: left;
+            height: 12px;
+            background-size: 60px 12px;
+            width: 31.2px;
+        }
+    </style>
 </head>
 
 <body>
-    Hello
+    <div class="icl-Ratings-starsWrapper">
+        <div class="icl-Ratings-starsUnfilled">
+            <div class="icl-Ratings-starsFilled" style="width: 31.2px;">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
