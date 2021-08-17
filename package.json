@@ -1,0 +1,23 @@
+{
+    "name": "personal-testing-deploy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node App.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ttnhan18062000/personal-testing-deploy.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ttnhan18062000/personal-testing-deploy/issues"
+    },
+    "homepage": "https://github.com/ttnhan18062000/personal-testing-deploy#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
