@@ -7,67 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .icl-Ratings-starsWrapper {
-            -webkit-font-smoothing: antialiased;
-            -webkit-box-direction: normal;
-            font-size: 11pt;
-            line-height: 20px;
-            font-weight: 400;
-            cursor: pointer;
-            color: #2557a7;
-            box-sizing: border-box;
+        .nav-search-submit {
+            -webkit-text-size-adjust: none;
+            color: #0F1111;
+            font-family: inherit;
+            font-size: 12px;
+            line-height: 1em;
             position: relative;
-            display: inline-block;
-            font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-            vertical-align: -1px;
-            filter: grayscale(1) brightness(0.59);
-            margin-right: .25rem;
+            height: 44px;
+            width: 50px;
+            margin: 2px 10px 5px 5px;
+            border: 0;
+            cursor: pointer;
+            background: -webkit-linear-gradient(top, #fcbb6a, #fcbb6a);
+            border-radius: 8px 8px 8px 8px;
+            -webkit-box-sizing: border-box;
         }
         
-        .icl-Ratings-starsUnfilled {
-            -webkit-font-smoothing: antialiased;
-            -webkit-box-direction: normal;
-            font-size: 11pt;
-            line-height: 20px;
-            font-weight: 400;
+        .nav-input {
+            -webkit-text-size-adjust: none;
+            font-family: inherit;
+            margin: 0;
+            font-size: 100%;
+            vertical-align: middle;
+            transition: all .1s linear;
+            color: #0F1111;
+            outline: 0;
+            -webkit-appearance: button;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             cursor: pointer;
-            color: #2557a7;
-            box-sizing: border-box;
-            font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 94 19' xmlns='http://www.w3.org/2000/svg' focusable='false'%3E%3Cpath d='M89.427 16.444l-1.175-5.005 3.905-3.364-5.14-.433L85 2.912l-2.016 4.73-5.141.433 3.905 3.364-1.175 5.005L85 13.788l4.427 2.656zm-19 0l-1.175-5.005 3.905-3.364-5.14-.433L66 2.912l-2.016 4.73-5.141.433 3.905 3.364-1.175 5.005L66 13.788l4.427 2.656zm-19 0l-1.175-5.005 3.905-3.364-5.14-.433L47 2.912l-2.016 4.73-5.141.433 3.905 3.364-1.175 5.005L47 13.788l4.427 2.656zm-19 0l-1.175-5.005 3.905-3.364-5.14-.433L28 2.912l-2.016 4.73-5.141.433 3.905 3.364-1.175 5.005L28 13.788l4.427 2.656zm-19 0l-1.175-5.005 3.905-3.364-5.14-.433L9 2.912l-2.016 4.73-5.141.433 3.905 3.364-1.175 5.005L9 13.788l4.427 2.656z' stroke='%23ffca4f' stroke-width='1.5' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: 0 0;
-            width: 60px;
-            height: 12px;
-            background-size: 60px 12px;
+            z-index: 10;
+            border: 0;
+            background-color: transparent;
+            text-indent: -1000px;
+            line-height: 1px;
+            border-radius: 8px 8px 8px 8px;
+            -webkit-box-sizing: border-box;
         }
         
-        .icl-Ratings-starsFilled {
-            -webkit-font-smoothing: antialiased;
-            -webkit-box-direction: normal;
-            font-size: 11pt;
-            line-height: 20px;
-            font-weight: 400;
+        .nav-icon {
+            -webkit-text-size-adjust: none;
+            color: #0F1111;
+            font-family: inherit;
+            font-size: 12px;
+            line-height: 1em;
             cursor: pointer;
-            color: #2557a7;
-            box-sizing: border-box;
-            font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 94 19' xmlns='http://www.w3.org/2000/svg' focusable='false'%3E%3Cpath d='M85 14.663L90.562 18l-1.476-6.29L94 7.478l-6.471-.546L85 1l-2.529 5.932L76 7.478l4.914 4.232L79.438 18zm-19 0L71.562 18l-1.476-6.29L75 7.478l-6.471-.546L66 1l-2.529 5.932L57 7.478l4.914 4.232L60.438 18zm-19 0L52.562 18l-1.476-6.29L56 7.478l-6.471-.546L47 1l-2.529 5.932L38 7.478l4.914 4.232L41.438 18zm-19 0L33.562 18l-1.476-6.29L37 7.478l-6.471-.546L28 1l-2.529 5.932L19 7.478l4.914 4.232L22.438 18zm-19 0L14.562 18l-1.476-6.29L18 7.478l-6.471-.546L9 1 6.471 6.932 0 7.478l4.914 4.232L3.438 18z' fill='%23ffca4f' fill-rule='evenodd'/%3E%3C/svg%3E");
+            font-style: italic;
             background-repeat: no-repeat;
-            background-position-x: left;
-            height: 12px;
-            background-size: 60px 12px;
-            width: 31.2px;
+            position: absolute;
+            top: 10px;
+            left: 12px;
+            pointer-events: none;
+            background-position: -73px -239px;
+            width: 27px;
+            height: 25px;
+            -webkit-filter: invert(100%);
+            -webkit-box-sizing: border-box;
+            background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/new-nav-sprite-global-2x_blueheaven-account._CB658093420_.png");
+            background-size: 275px;
         }
     </style>
 </head>
 
 <body>
-    <div class="icl-Ratings-starsWrapper">
-        <div class="icl-Ratings-starsUnfilled">
-            <div class="icl-Ratings-starsFilled" style="width: 31.2px;">
-            </div>
-        </div>
+    <div class="nav-search-submit">
+        <input type="submit" class="nav-input" value="Go" aria-label="Go">
+        <i class="nav-icon"></i>
     </div>
 </body>
 
